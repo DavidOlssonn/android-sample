@@ -26,18 +26,18 @@ import com.example.instabug.gcm.RegistrationIntentService;
 import com.instabug.library.Instabug;
 import com.instabug.library.invocation.InstabugInvocationMode;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    @Bind(R.id.drawer_layout)
+    @BindView(R.id.drawer_layout)
     DrawerLayout drawer;
-    @Bind(R.id.nav_view)
+    @BindView(R.id.nav_view)
     NavigationView navigationView;
-    @Bind(R.id.spinner)
+    @BindView (R.id.spinner)
     Spinner spinner;
     ImageView headerImage;
 

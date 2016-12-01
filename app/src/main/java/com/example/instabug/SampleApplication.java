@@ -3,9 +3,6 @@ package com.example.instabug;
 import android.app.Application;
 import android.support.multidex.MultiDex;
 
-import com.instabug.library.IBGColorTheme;
-import com.instabug.library.IBGCustomTextPlaceHolder;
-import com.instabug.library.IBGInvocationEvent;
 import com.instabug.library.Instabug;
 import com.instabug.library.InstabugColorTheme;
 import com.instabug.library.InstabugCustomTextPlaceHolder;
@@ -13,7 +10,6 @@ import com.instabug.library.internal.module.InstabugLocale;
 import com.instabug.library.invocation.InstabugInvocationEvent;
 import com.instabug.library.model.BugCategory;
 
-import java.security.KeyFactory;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -37,6 +33,8 @@ public class SampleApplication extends Application {
                 .setLocale(new Locale(InstabugLocale.FRENCH.getCode()))
                 .setLocale(Locale.GERMAN)
                 .build();
+
+        Instabug.disable();
 
         Instabug.setDebugEnabled(true);
 
